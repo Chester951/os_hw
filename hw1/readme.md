@@ -5,7 +5,13 @@ Collatz conjecture take any positive integer n and apply the following algorithm
 $$n =\begin{cases}n/2, & \text{if n is even} \\3\times n+1, & \text{if n is odd}\end{cases}$$
 
 ### 1.2 Descriptions
-Using the `fork()` system call to generate the sequence of child process. User should provide the starting number in command line. Foe example, if 8 is passed, the child process will output the collatz conjecture result: 8,4,2,1.
+Using the `fork()` system call to generate the sequence of child process. User should provide the starting number in command line.
+```
+Input: 8
+Output: 8,4,2,1
+Explanation: If 8 is passed, the child process will output the collatz conjecture result
+``` 
+
 ### 1.3 Parent process and child process
 ``` c
 pid_t child_id = fork();
@@ -34,6 +40,11 @@ gcc -o 3.14_Collatz_conjecture.out 3 14_Collatz_conjecture.c
 In Problem 1, the child process must output the sequence of numbers generated from the algorithm specified by the Collatz conjecture because the parent and child have their own copies of the data. 
 
 Another approach is to design a program to establish a shared memory object between the parent and child processes. This technique allows the child to write the contents of the sequence when the child completes.  
+```
+Input: 8
+Output: 8,4,2,1
+Explanation: If 8 is passed, the shared memory object stores the collatz conjecture result.
+``` 
 
 ### 2.2 Create share memory object
 Shared memory allows multiple processes to access a common memory region (Buffer). It enables inter-process communication and data sharing.
@@ -110,7 +121,9 @@ Running result
 
 Design a file copying program using ordinary pipes. This program will be passed two parameters. For example:
 ```
-filecopy input.txt output.txt
+cmd: ./filecopy.o input.txt output.txt
+Output: output.txt
+Explanatin: The output.txt should appear the text which is same as input text.
 ```
 ### 3.2 Create pipe and use pipe to communicate with a child process
 Create the pipe before forking.
