@@ -2,13 +2,7 @@
 ## Problem 1 ([Q1.c](./3.14_Collatz_conjecture.c))
 ### 1.1 Collatz conjecture 
 Collatz conjecture take any positive integer n and apply the following algorithm.
-$$
-n =
-\begin{cases}
-n/2, & \text{if n is even}  \\
-3\times n+1, & \text{if n is odd}
-\end{cases}
-$$
+$$n =\begin{cases}n/2, & \text{if n is even} \\3\times n+1, & \text{if n is odd}\end{cases}$$
 
 ### 1.2 Descriptions
 Using the `fork()` system call to generate the sequence of child process. User should provide the starting number in command line. Foe example, if 8 is passed, the child process will output the collatz conjecture result: 8,4,2,1.
