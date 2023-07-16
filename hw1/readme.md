@@ -1,5 +1,5 @@
 # Homework 1
-## Problem 1 ([Q1.c](./3.14_Collatz_conjecture.c))
+## Problem 1 (Collatz conjecture. [Q1.c](./3.14_Collatz_conjecture.c))
 ### 1.1 Collatz conjecture 
 Collatz conjecture take any positive integer n and apply the following algorithm.
 $$n =\begin{cases}n/2, & \text{if n is even} \\3\times n+1, & \text{if n is odd}\end{cases}$$
@@ -35,7 +35,7 @@ gcc -o 3.14_Collatz_conjecture.out 3 14_Collatz_conjecture.c
 ```
 
 
-## Problem 2 ([Q2.c](./3.15_Collatz_conjecture_share_memory.c))
+## Problem 2 (Collatz conjecture with share memory. [Q2.c](./3.15_Collatz_conjecture_share_memory.c))
 ### 2.1 Descriptions
 In Problem 1, the child process must output the sequence of numbers generated from the algorithm specified by the Collatz conjecture because the parent and child have their own copies of the data. 
 
@@ -116,7 +116,7 @@ Running result
 
 
 
-## Problem 3 ([Q3.c](./3.20_filecopy.c))
+## Problem 3 (Copy .txt file. [Q3.c](./3.20_filecopy.c))
 ### 3.1 Descriptions
 
 Design a file copying program using ordinary pipes. This program will be passed two parameters. For example:
@@ -156,3 +156,7 @@ Compile program
 ```
 gcc -o 3.20_filecopy.o 3.20_filecopy.c
 ```
+
+
+## Reference
+1. [Forking, Part 1: Introduction](https://github.com/angrave/SystemProgramming/wiki/Forking%2C-Part-1%3A-Introduction)
