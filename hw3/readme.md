@@ -2,6 +2,11 @@
 ## Problem 1
 ### 1.1 Descriptions
 You were asked to create five threads that geneate 1,000 random points and deciding the points whether fall in the circle. Storing this result in a global variable. In main threads compute  $\pi$ by foumla $ 4*\frac {points\, in\, circle} {total\, points} $.
+```
+Output: computed pi value
+Explanation: create another 5 threads and each thread generate 1,000 points and by using Monte Carlo method to compute pi.
+```
+
 ### 1.2 Compute $\pi$ by Monte Carlo method
 Equation can be refer to [Link](https://youtu.be/ELetCV_wX_c).
 
