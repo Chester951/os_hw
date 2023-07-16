@@ -34,6 +34,7 @@ Compile program
 gcc -o Q1.o Q1.c
 ```
 Running result
+
 ![](https://drive.google.com/uc?export=view&id=1-3INItUJVo4KUQjF-x3s4gl3ZxXtRRmK)
 
 
@@ -115,6 +116,7 @@ gcc -o 3.15_Collatz_conjecture_share_memory.out 3.15_Collatz_conjecture_share_me
 ```
 
 Running result
+
 ![](https://drive.google.com/uc?export=view&id=1-6fN7-jqc0nXkfoXWztEQknML8Bv2YTI)
 
 
@@ -160,6 +162,7 @@ gcc -o 3.20_filecopy.o 3.20_filecopy.c
 ```
 
 Running result
+
 ![](https://drive.google.com/uc?export=view&id=1-B7xCHiZlxE3SsFlGSdrI1iUiXAnhNGw)
 
 

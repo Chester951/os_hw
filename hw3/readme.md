@@ -40,6 +40,7 @@ Compile program
 gcc -o Q1.o Q1.c
 ```
 Running result
+
 ![](https://drive.google.com/uc?export=view&id=1-MIdRa3RGPj9QrZrbETac4qnSEfLNxBw)
 
 
