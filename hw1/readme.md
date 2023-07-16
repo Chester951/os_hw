@@ -31,8 +31,10 @@ else
 ### 1.4 Results
 Compile program
 ```
-gcc -o 3.14_Collatz_conjecture.out 3 14_Collatz_conjecture.c
+gcc -o Q1.o Q1.c
 ```
+Running result
+![](https://drive.google.com/uc?export=view&id=1-3INItUJVo4KUQjF-x3s4gl3ZxXtRRmK)
 
 
 ## Problem 2 (Collatz conjecture with share memory. [Q2.c](./3.15_Collatz_conjecture_share_memory.c))
@@ -113,7 +115,7 @@ gcc -o 3.15_Collatz_conjecture_share_memory.out 3.15_Collatz_conjecture_share_me
 ```
 
 Running result
-
+![](https://drive.google.com/uc?export=view&id=1-6fN7-jqc0nXkfoXWztEQknML8Bv2YTI)
 
 
 ## Problem 3 (Copy .txt file. [Q3.c](./3.20_filecopy.c))
@@ -157,6 +159,10 @@ Compile program
 gcc -o 3.20_filecopy.o 3.20_filecopy.c
 ```
 
+Running result
+![](https://drive.google.com/uc?export=view&id=1-B7xCHiZlxE3SsFlGSdrI1iUiXAnhNGw)
+
 
 ## Reference
 1. [Forking, Part 1: Introduction](https://github.com/angrave/SystemProgramming/wiki/Forking%2C-Part-1%3A-Introduction)
+2. [Insert google drive photos](https://hackmd.io/@Jujubeleven/r1kubA4ps)

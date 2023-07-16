@@ -39,6 +39,9 @@ Compile program
 ```
 gcc -o Q1.o Q1.c
 ```
+Running result
+![](https://drive.google.com/uc?export=view&id=1-MIdRa3RGPj9QrZrbETac4qnSEfLNxBw)
+
 
 ## Reference
 1. [Synchronization, Part 1: Mutex Locks](https://github.com/angrave/SystemProgramming/wiki/Synchronization%2C-Part-1%3A-Mutex-Locks)

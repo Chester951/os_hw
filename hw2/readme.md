@@ -38,9 +38,10 @@ int main()
 ### 1.3 Results
 Compile program
 ```
-gcc -o Q1.o Q1.c
+gcc -o Q1.o Q1.c -lm
 ```
-
+Running result
+![](https://drive.google.com/uc?export=view&id=1-BjXqu5-CxqbTree5DMh79TS7wdpww9h)
 
 ## Problem 2 (Multithreaded sorting application. [Q2.c](./Q2.c))
 ### 2.1 Description
@@ -72,6 +73,8 @@ Compile program
 ```
 gcc -o Q2.o Q2.c
 ```
+Running result
+![](https://drive.google.com/uc?export=view&id=1-D729NstP5uaFtYTb4JWkt6Xk5HOI9Vb)
 
 ## Reference
 1. [Pthreads, Part 1: Introduction](https://github.com/angrave/SystemProgramming/wiki/Pthreads%2C-Part-1%3A-Introduction)

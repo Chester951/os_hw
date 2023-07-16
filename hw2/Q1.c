@@ -98,8 +98,6 @@ void* compute_stddev(void* arg)
 }
 
 
-
-
 int main(int argc, char *argv[])
 {
     // check the input variable is correct
