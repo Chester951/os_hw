@@ -14,25 +14,23 @@ Equation can be refer to [Link](https://youtu.be/ELetCV_wX_c).
 #### 1.3.1 What is a Critical Section
 A cirtical section is a section of code that can only be executed by one threads at a time. If two threads were to execute code inside the critical section at the same time then it is possible that program may no loger have correct behavior.
 
-#### 1.3.2 How to ensure only one thread at a time can access a global variable?
-Just add thee lines:
+#### 1.3.2 Mutex lock initialization
+`pthread_mutex_init` used to initialize a mutex object, allocate memory for it and set initial properties.
+``` c
+pthread_mutex_t *lock = malloc(sizeof(pthread_mutex_t));       
+pthread_mutex_init(lock, NULL);  
+// ...
+pthread_mutex_destroy(lock);
+```
+
+#### 1.3.3 Mutex lock creation
+`pthread_mutex_lock()` used to lock the mutex, if the mutex has been locked by other threads, block the current thread until the mutex is available.
 ``` c
 pthread_mutex_t lock;       // global variable
 pthread_mutex_lock(&lock);  // start of critical section 
 pthread_mutex_unlock(&lock); // end of critical section 
 ```
-As soon as the original thread unlocks the mutex, the secound (waiting) thread will acquire the lock and be able to continue.
 
-#### 1.3.3 Other ways to create a mutex
-
-``` c
-pthread_mutex_t *lock = malloc(sizeof(pthread_mutex_t));       
-pthread_mutex_init(lock, NULL);  
-// later
-// we must have equal of unlocks and locks in an execution
-pthread_mutex_destroy(lock);
-free(lock);
-```
 
 ### 1.4 Results
 Compile program
